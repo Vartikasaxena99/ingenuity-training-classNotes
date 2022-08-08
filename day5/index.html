@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation-Techniques</title>
+    <style>
+     .container
+     {
+        width:100%;
+        height:100vh;
+        background-color: skyblue;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+     .box
+     {
+        width: 250px;
+        height: 300px;
+        border: 5px solid white;
+        box-shadow: 5px 10px 5px gray;
+        background-color: brown;
+        transition: transform 1s;  
+        /* we use transition for making smooth like if we are using 1s it will take 1s after clicking the box */
+     }
+     .box1:hover{
+        /* transform: translate(-300px,-100px); */
+        /* we can use tranform in one direction,x-y direction,x,y,z direction by using translate */
+        /* transform: rotate(360deg); */
+        /* we use rotate with angle */
+        /* transform: rotate(360deg) translate(300px); */
+        /* we can use mutiple transorm firstly it applies which we write first and after second */
+        /* like it will use rotate first then translate */
+        /* transform: scale(2);  scale up */
+        /* we can scale up and scale basically for increasing size */
+        /* transform: scale(-2); scale down */
+        transform: skew(360deg,150deg);
+        /* we use skew for applying transformation in x and y togrether */
+     }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- 2D Transformation-Animation (through x and y direction) -->
+    <!-- 3D Transformation-Animation  (through x,y and z direction) -->
+    <div class="container">
+        <div class="box box1"></div>
+        
+    </div>
+</body>
+</html>
