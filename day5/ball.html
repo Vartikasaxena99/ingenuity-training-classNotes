@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            height: 100vh;
+            width: 100%;
+            /* background-image: linear-gradient(to right top blue,deeppink);  */
+            background-color: white; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box
+        {
+            width: 60px;
+            height:60px;
+            /* border:10px solid rgba(204, 197,197); */
+            border-radius: 50%;
+            background-image: linear-gradient(to right, yellow 50%, green 50%);
+            /* background-color: blueviolet; */
+            
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: loader 3s linear  infinite; 
+            
+            /* animation: popup 2s linear infinite; */
+        }
+        @keyframes loader { 
+            0%
+            {
+                 transform: translate(0px,0px) ; 
+                /* transform: rotate(360deg); */
+                transform: rotate(0deg);
+                
+            }
+            50%
+            {
+                
+                transform:  translate(0px,-250px) rotate(180deg) ;
+            }
+            100%
+            {
+                /* transform: rotate(360deg); */
+                transform: rotate(360deg);
+                
+            }
+            
+        }
+        .box2
+        {
+            width: 50px;
+            height:25px;
+            /* border:10px solid rgba(204, 197,197); */
+            border-radius: 50%;
+            background-color: grey;
+            /* transform: rotate(180deg,180DEG); */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: pop2 3s linear infinite;  
+            
+            /* animation: popup 2s linear infinite; */
+        }
+        p
+        {
+            font-family: arial;
+            font-size: 20px;
+            /* font-weight: bold; */
+            color:black;
+            text-transform: uppercase;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        span
+        {
+            animation: popup 1s linear  infinite;
+        }
+         @keyframes popup {  
+            0%
+            {
+                opacity: 1;
+            }
+            50%
+            {
+                opacity: 0;
+            }
+            100%
+            {
+                opacity: 1;
+            }
+            
+        }
+        @keyframes pop2 { 
+            0%
+            {
+                transform: scale(1);
+                opacity: 2;
+            }
+            50%
+            {
+                transform: scale(0);
+                opacity: 1.5;
+            }
+            100%
+            {
+                transform: scale(1);
+                opacity: 2;
+            }
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="box2">
+
+        </div>
+    <div class="points">
+        <p>
+        Loading<span> ...</span>
+        </p>
+        
+        
+    </div>
+    
+    </div>
+</body>
+</html>
