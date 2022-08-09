@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascipt Fundametals</title>
+     <!-- if we write something in script tag in head tag but if we are not creating ay element in body tag then this code will not run -->
+    <script>
+        document.body.style.backgroundColor="pink";
+    </script>
+    
+    <link rel="stylesheet" href="myScript.js">
+    <!-- /either we can use script tag for writing javascipt code or we can use external javascript file for writing code' 
+    and we have to cadd link in head section -->
+
+   
+</head>
+<body>
+    <!-- what is javascript--- -->
+   <!-- it is a text based programming language used both on client side and server sideit allowa you to make web pages interective -->
+   <!-- html and css style the web pages while javascript makes your web pages interective -->
+    
+   <!-- what can you do with it?----- -->
+    <!-- it is used to create web/mobile apps.real time networking apps,command line tools,game -->
+    
+    <!-- where does javascript code run----- -->
+    <!-- browser (where remains javascipt engine) -->
+    <!-- node--it is environment  where you can run javascript code -->
+    <!-- what is node--it is a javascript run time environment outside the browser -->
+    
+    <!-- javascipt vs ECMAScript---- -->
+    <!-- javascript is programming language while ECMASCRIPT is specifcation for javascipt,it provides all rules for javascript -->
+
+     <!-- we use script tag for writing javascript code ,eithere we can put script tag in head or body section -->
+    <script>
+        //javascript statement/command/instruction
+        // 1.output statenment-------
+        //1.document.write("hello world! ");
+
+        //2.alert-----  this will display on the message format in window
+        // window.alert("This is javascript");
+        //alert("This is javascript");
+
+        //3.for opening console we use "ctrl+shif+j"
+        // console.log("this is console to debug your code");
+
+        // there are two types of comments in javascript ----"//"
+        // single line commentsmultilind comment  ------"/* */"
+
+        // variable--it store data temporary
+        // variables in jvascript
+        // we write semicolon after finising every line
+        /*var name;
+        name="vartika saxena";
+        */
+
+        // variable rules
+        /*1.these are case sensitive
+        2.variable name can not start from number
+        3.only underscore (_)is used as special character
+        4.space are not allowed between variable name
+        5.you can not use variable name as keyword
+        */
+
+        // var first name="vartika"    not allowed
+        // var firstname;       allowed
+
+
+        /* data type---
+        premptive
+        non premptive*/
+
+        /*String dataType
+         var firstName="vartika",lastName="saxena"  (eiher we use single code or double code as sring)
+        */
+         /*number DT
+        var distance=40;
+        var exactD=40.7;
+        */
+        /*boolean DT
+        var isOpened=false;
+
+        console.log(typeof firstNmae);  typeof is used for checking datatype of variable
+        */
+
+
+        /*var training;
+        console.log(typeof training);//UNDEFINED
+
+        var trainingType=null;
+        console.log(typeof trainingtYPE);//OBJECT
+        */
+        
+
+
+        // TYPE OF PROGRAMMING LANGUAGE
+        // static and dynamic
+
+        // typescript is super set of javascript 
+        // typescript is strongly typed language while javascript is loosly typed language
+
+        /*function say(value)
+        {
+            if(value)
+            {
+                console.log("correct");
+            }
+            else
+            {
+                console.log("incorrect");
+            }
+        }
+        say("true") or say(true) //in both the cases it will print correct while in the case of say("true")
+        it should print incorrect that's why it produce wrong result sometimes so we use typescript
+        */
+
+        /*javascript work in two Medes 
+        1.sloppy mode --we can initalize value without using var(it is by deafult mode)
+        ex--   lastDay("vartika")//allowed
+        2.strict mode--you have to use "strict" keyword(in it we should write all the thing correctly)
+        ex--lastDay="vartika"//not allowed
+        */
+
+
+        /*// dialog boxes
+        if we want to take input from the user we use dialog
+        1.alert-----use to display some message as notification
+        2.confirm----a dialog box which input as "Yes" or "No"
+        3.PROMPT---USE TO TAKE INPUT FROM USER
+        */
+
+        /*var isOk=confirm("are you sure to go furthur");
+        console.log(isOk);
+
+        var name=prompt("enter your name")//for taking value from the user
+        console.log(name);
+        */
+
+
+        /*type conversion
+
+        let x=10;
+        x=true;
+        x="new string"
+
+        string+number   ----always perorm concatenation
+        15+3+"num"   ----18num
+        true+false   ---it will print 1
+        'true'==true   --false
+        12/string     ---it convert string into number then it will print number
+        */
+
+       /*Node
+        node -v//for checking the version of node
+        npm //it is used to load third party library
+
+        we can run javascript in editor itself by using "node javascript file"
+        */
+        
+    </script>
+   <!-- 1.print date in the following format 
+   today date:09/08/2022 
+   today day:tuesday
+    2.take input from user
+    print its name on documentstyle it with color 
+    3.take two  numbers from user and print
+    addition
+    subtarcation
+    multiplication
+    division
+
+    4.execute js code inside the editor
+    -->
+</body>
+</html>
