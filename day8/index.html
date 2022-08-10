@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* // javascript operators
+        // arithmetic operators+,-,*,/,%,++,--
+        var a=20;
+        var b=10;
+        var c=a+b;
+        var d=a-b;
+        var e=a*b;
+        var f=a/b;
+        var g=a%3;
+        console.log("result"+c);
+        console.log("result"+d);
+        console.log("result"+e);
+        console.log("result"+f);
+        console.log("result"+g);
+        console.log("result"+ ++g);//3
+        console.log("result"+ g++);//3
+        console.log("result"+ g--);//4
+        console.log("result"+ --g);//2
+
+        //relational operators
+        // <,>,<=,>=,==,===,!=,!==
+        // result true and false
+        (a=10),(b=20),(c=30);
+        
+        console.log(a<b);//true
+        console.log(a>b);//false
+        console.log(a<=b);//true
+        console.log(a>=b);//false
+        console.log(a!=b);//true
+
+        a='20';
+        //comaprasaion Op:it compares the value
+        console.log(a==b);
+        //strict comaparsion Op: it compares the value as well as datatype
+        console.log(a===b);
+        console.log(a!=b);//false
+        console.log(a!==b);//true
+
+
+        //logical operators
+        var result=a<b && a!=b;
+        var result="hello" && a==b;//any statement like "hello" is considered as true when we compare it with another statement
+        console.log("logical and:"+result);//true
+
+        var result="hello" || a!=b;//in or operator if first statement is true we don't check second statement
+        console.log("logical or:"+result);
+        console.log("logical or:"+!result);//it opposite the value
+
+
+        b=55;
+        console.log(a=b);//55
+        console.log(a+=b);//110
+
+
+        //ternary operator
+        result=a!=b ? "hi this is true": "hi,yhis is false";
+        console.log(result)//hi this is true
+        */
+
+
+
+
+       /*hoisting //it will make the decleration to be automatcally plaed at the top
+       //Note:only decelartion is hoisted not the initilization
+        x=10;
+        console.log(x);
+        var x;//variable declared at the end but it make it in the starting it is called hoisting
+        */
+
+
+        //conditional statements
+        //if,if-else,if-elseif-else,nested if-else
+        /*var number=5;
+        if(number>0)
+        {
+            console.log("number is positive");
+        }
+        else if(number==0)
+        {
+            console.log("number is zero");
+        }
+        else{
+            console.log("number is negative");
+        }
+        console.log("this is simple if statement");
+        */
+        
+        /*if(number>0)
+        {
+            if(number==0) //if we are checking only one condition then we can remove the bracket
+            console.log("number is positive"); 
+            else
+            console.log("number is negative");
+        }
+        else
+            console.log("number is undefined");
+        */
+
+        /*loops
+        loops in javascript
+       
+        //1.intilization 
+        //2.condition to stop the loop
+        //3.increment decrement to move the loop next iteration
+       // while loop
+        var i=1;
+        while(i<=10)
+        {
+            console.log("this is javascript loop:"+1);
+            i++;
+        }
+
+        //for loop
+        for(var k=1;k<=10;k+=2)
+        {
+            console.log("odd:"+k);
+        }
+        var k=1;
+        for(;;)
+        {
+            if(k>10)
+            break;
+            cosole.log("odd"+k);
+            k+=2;
+        }
+        */
+
+        var person={
+            name:"vartika",
+            age:20,
+            city:{cityName:"mahoba"},
+            sector:[1,2,3,4,5],
+            details:function()
+            {
+                return this.name+" from"+this.city.cityName;
+            },
+        };
+        var student=new object();
+        student.name="vartika";
+        student.age=22;
+        student["city"]="mahoba";
+        console.log(student);
+
+        person.email="vartika saxena";
+        console.log(person);
+    </script>
+</body>
+</html>
