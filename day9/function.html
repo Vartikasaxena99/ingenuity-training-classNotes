@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*<--functions in javascript -->
+    <!-- function part -->
+    <!-- 1.function defination -->
+    <!-- 2. function calling-->
+    <!-- 3.function arguments(we can send information to the function by using it)--(optional) -->
+    <!-- 4.return value(optional) -->
+
+     /*
+    // function versions 
+    //1.function without arguments and without return 
+    
+    function myfunction() //function defination
+    {
+        document.write("my name is vartika saxena");
+    }
+
+    myfunction();//call the function
+
+    //2.function with arguments and without return 
+
+    function myfunction1(a,b)
+    {
+        document.write("my name is vartika");
+        document.write("Result"+(a+b));
+    }
+    myfunction1(5,10);
+
+     //3.function with arguments and with return 
+     function myfunction3(a,b)
+    {
+        return a+b;
+    }
+    var result=myfunction3(10,20);
+    document.write(result);//or
+    document.write(myfunction3(3,2));
+    */
+
+
+
+   /*function sayHi(message)
+   {
+    if(message) return message;
+    else return; //or else "no data received"
+
+
+    /*if(!message) return "nothing";
+    else return message;
+    */
+   /*
+   }
+   document.write(sayHi("hello"));
+   document.write(sayHi()); //undefined //or no data received
+
+
+
+   function add(a,b=0)  //here b=0 i sdefault parameter
+   {
+    return a+b; 
+   }
+   function sum()
+   {
+    document.write(argumentslength); //it defines how many argumets is receiving
+   }
+
+
+   /*we don't define data type of arguments in javasscript
+   we don;'t check datatype before performing operation'*/
+
+
+
+
+// we can also create function using constructor
+/*var myfunction4=new function("a","b","return a+b");
+/*myfunction4(a,b)
+{
+    return a+b;
+}
+
+var res=myfunction4(5,7);
+document.write(res);
+
+
+
+
+/*function expression  it means storing function defination inside a variable is called function expression 
+it also knows as Anonymous function
+//var a=10;
+var a=function()
+{
+    document.write("hi i am here");
+    return "vartika saxena";
+}
+console.log(a());
+
+
+//self invoking function --a function thsat calls itself
+
+(function()
+{
+            document.write("this is metro train")
+})
+();
+
+//function hoisting
+
+function sayHello(5,10)
+{
+      document.write()
+}
+*/
+
+</script>
+
+
+
+
+<script>
+    //javascript scope  --it is visibility of scope
+
+    // there are 3 types of ScriptProcessorNode
+    /*1.block scope
+    2.function scope
+    3.global scope
+    */
+    //1.block scope :ESS   there is no block,its available in ES6(with let and const)
+//     function scope1()
+//     {
+//         var a=10;
+//         console.log(a);
+//     }
+//     scope1();
+//     console.log(a)
+
+
+
+//     function scope1()
+//     {
+//         var a=10;
+//         console.log("inside scope1");
+//         function scope2()
+//         {
+//             console.log("inside scope2");
+//             console.log(a);
+//         }
+//         scope2();
+//     }
+//     scope1();
+//     console.log("outside scope1");
+//     console.log(a)
+
+// //var c is global scope so it can be accessed inside and outside the function
+//     var c=0;
+//     function scope1()
+//     {
+//         var a=10;
+//         console.log(c);
+//         function scope2()
+//         {
+//             console.log("inside scope2");
+//             console.log(c);
+//         }
+//         scope2();
+//     }
+//     scope1();
+    
+//     console.log(c)
+
+
+
+//     function checkvar()
+//     {
+//         //a variable that is create inside function without var is traeted as global varibale
+//         // and have global scope so we use let for declare value inside the function
+//         let data=20;
+//         console.log(data);
+//     }
+//     checkvar(0);
+//     console.log(data);//undefined
+
+
+
+//     function add(a,b)
+//     {
+//         return a+b;
+//     }
+//     var sum=add; //it is copy of function so we can also call function as sum() or add()
+//     // reference of add() is also stored in sum
+//     console.log(sum(9,10));
+//     console.log(add(9,10));
+
+
+// passing function to a function
+// function avg(a,b,sum)
+// {
+//     return sum(a,b)/2;
+// }
+// function add(a,b)
+// {
+//     return a+b;
+// }
+// avg(5,10,sum);
+// var sum=add;
+
+
+
+
+
+</script>
+
+<script>
+    // function to create objects
+    // class
+ function Person()
+ {
+    // properties
+
+    this.name="vartika";
+    this.age=20;
+
+    //methods
+
+    this.details=function()
+    {
+        return "name = "+this.name+"Age : "+this.age;
+    };
+
+
+   
+}
+var obj1=new Person();
+console.log(obj1.name);
+obj1.name="sakshi";
+console.log(obj1.details());
+// function Person()
+//  {
+//     // properties
+
+//     this.nmae="vartika";
+//     this.age=20;
+
+//     //methods
+
+//     this.details=function()
+//     {
+//         return "name = "+this.name+"Age : "+this.age;
+//     };
+// }
+// var obj1=new Person();
+// console.log(obj1.name);
+// obj1.name="sakshi";
+// console.log(obj1.details);
+</script>
+</body>
+</html>
