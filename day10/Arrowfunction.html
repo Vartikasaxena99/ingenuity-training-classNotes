@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ES5 Based Function------
+        var add=function(a,b)//1 fn
+        {
+            return a+b;
+        };
+        console.log(add(5,10));
+
+        // ES6 Fat Arrow function
+
+        
+        var add=(a,b)=> a+b;  //it is short function of 1 fn
+        console.log(add(5,10));
+
+
+
+        // various variation of Arrow function
+
+        // variation-1
+
+        // var sayHello=()=> console.log("my name");
+        // var sayHello=()=> //if we have mutiple lines of code then we write curly brackets
+        // {
+        //     console.log("my name");
+        //     console.log("Vartika");
+        // } 
+        // sayHello();
+
+
+        // variation-2
+        // var sqr =(a) => console.log("result"+a*a);
+        // sqr(5);
+
+        // variation-3
+        // var add=(a,b)=> a+b;  //it is short function of 1 fn
+        // console.log(add(5,10));
+
+        // var myArr=[1,2,3,4];
+        // myArr.forEach((a)>=console.log(a*10));
+    </script>
+</body>
+</html>

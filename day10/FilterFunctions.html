@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var ages=[32,40,16,17];
+        // var res=ages.filter(filterAge);
+        // function filterAge(age)
+        // {
+        //     return age >18;
+        // }
+
+
+            let cities=[
+                {name:"america",population:379261},
+                
+                {name:"america",population:379261},
+                {name:"america",population:379261},
+            ]
+            var bigCities=[];
+            //we can write this fn or
+            for(var i=0;i<cities.length;i++)
+            {
+                if(cities[i].population>3000)
+                {
+                    bigCities.push(Cities[i]);
+                }
+            }
+            console.log(bigCities);
+             //or this one
+            var bigCities=cities.filter((city)=>population>300000);
+            
+            console.log(bigCities);
+
+            //print city in descending order
+            var bigCities=cities.filter((city)=>population>300000)
+            .sort(function(n1,n2){return n2.name-n1.name;
+            });
+            
+            console.log(bigCities);
+    </script>
+</body>
+</html>
