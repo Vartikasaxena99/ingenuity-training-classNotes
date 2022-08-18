@@ -28,7 +28,7 @@
         // Dom refernces
         var x=document.getElementsById("head1");
         // document.write(x);
-        var x=document.getElementsByClassName("para");
+        var y=document.getElementsByClassName("para");
         var z=document.getElementsByTagName("ul");
         document.querySelector("#head2");
         var para=document.querySelector(".para");//if we have multiple class or element it will call only first one
@@ -41,7 +41,38 @@
         h2.style.visibility="hidden";
         allPara[1].style.color="red";
         allPara[1].style.border="2px solid blue";
+        for(var i=0;i<y.length;i++)
+        {
+            y.style.color="blue";
+        }
+
+
+    //    2 way habdle ecent using it freference
+    //     var btn=document.querySelector("button");
+    //     btn.onmouseover=function()
+    //     {
+    //         document.querySelector("p").style.backgroundColor="pink";
+    //     }
+
+
+    // 3.using AddEventListner 
+
+    //    1.add Listner
+
+//     btn.addEventListner("click",task1);
+//     function task1(){
+//    document.getElementById("head1").style.color="blue";
+//     }
+    // 2.remove event Listner
+    // btn.removeEventListner("click",task1);
         
     </script>
+    <!-- 1inline event handling
+    <button onClick="alert('Button is clicked')">click me</button> -->
 </body>
 </html>
+
+<!-- event handling mechaism
+inline event handling
+habdle ecent using it freference
+using AddEventListner -->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WHAKE A MOLE GAME</title>
+   <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+   <h1>WHAKE A MOLE</h1>
+   <img src="mole.png" id="mole">
+   <img src="dirt.svg" id="mud">
+   <button type="button" onclick="start()" id="start">START</button>
+   <img src="dirt.svg" id="dirt1" class="dirt">
+   <img src="dirt.svg" id="dirt2" class="dirt">
+   <img src="dirt.svg" id="dirt3" class="dirt">
+   <img src="dirt.svg" id="dirt4" class="dirt">
+   <img src="dirt.svg" id="dirt5" class="dirt">
+   <img src="dirt.svg" id="dirt6" class="dirt">
+
+   <img src="mole.png" id="mole1" class="mole" onclick="clicked()">
+   <img src="mole.png" id="mole2" class="mole" onclick="clicked()">
+   <img src="mole.png" id="mole3" class="mole" onclick="clicked()">
+   <img src="mole.png" id="mole4" class="mole" onclick="clicked()">
+   <img src="mole.png" id="mole5" class="mole" onclick="clicked()">
+   <img src="mole.png" id="mole6" class="mole" onclick="clicked()">
+
+   <span class="points">YOUR POINT :-</span><span id="currentPoint" class="points">0</span>
+
+   <script src="script.js"></script>
+   
+
+    <script>
+
+    //    function start()
+    //    {
+           
+    //        head.style.visibility="hidden";
+    //        points.style.visibility="visible";
+    //        currentPoint.style.visibility="visible";
+    //        mole.style.visibility="hidden";
+    //     //    mole1.style.visibility="visible";
+           
+    //     //    mole3.style.visibility="hidden";
+    //     //    mole4.style.visibility="hidden";
+    //     //    mole5.style.visibility="hidden";
+    //     //    mole6.style.visibility="hidden";
+    //     //    mole.style.visibility="hidden";
+    //     //    mud.style.visibility="hidden";
+           
+    //    }
+
+
+
+
+    var currentPoint=0;
+
+function start(){
+    document.getElementById("mole").style.visibility='hidden';
+    document.getElementById("mud").style.visibility="hidden";
+    document.getElementById("start").style.visibility='hidden';
+
+    for(var i=0;i<2;i++){
+        document.getElementsByClassName("points")[i].style.visibility="visible";
+    }
+    for(var i=0;i<6;i++){
+        document.getElementsByClassName("dirt")[i].style.visibility="visible";
+    }
+    setInterval(() => {
+        var random=Math.floor(Math.random()*6)+1;
+        document.getElementById("mole"+random).style.visibility="visible";
+        setTimeout(() => {
+            for(var i=0;i<6;i++){
+                document.getElementsByClassName("mole")[i].style.visibility="hidden";
+            }
+        }, 900);
+    }, 1000);
+}
+
+function clicked(){
+    document.getElementById("currentPoint").innerHTML=currentPoint++;
+}
+    </script>
+  </body>
+</html>
