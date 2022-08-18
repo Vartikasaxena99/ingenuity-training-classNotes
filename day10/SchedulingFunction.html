@@ -9,25 +9,25 @@
 <body>
     <script>
         //setTimeout function
-        setTimeout(callback,timer);
+        // setTimeout(callback,timer);
 
-        // 1.setTimeout(callback,5000);
-        // function callback()
-        // {
-        //     console.log("hello");
-        // }
+        // setTimeout(callback,5000);
+        function callback()
+        {
+            console.log("hello");
+        }
 
         // 2.setTimeout(()=>
         // {
         //     console.log("hello");
         // },5000)
 
-        // 3.setTimeout(()=>
-        // {
-        //     console.log("hello");
-        // },5000)
-        // var myInterval=setInterval(callback,2000);
-        // console.log(myInterval);
+        setTimeout(()=>
+        {
+            console.log("hello");
+        },5000)
+        var myInterval=setInterval(callback,5);
+        document.write(myInterval);
     </script>
 </body>
 </html>

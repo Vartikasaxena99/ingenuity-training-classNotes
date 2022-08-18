@@ -22,27 +22,27 @@
                 {name:"america",population:379261},
                 {name:"america",population:379261},
             ]
-            var bigCities=[];
-            //we can write this fn or
-            for(var i=0;i<cities.length;i++)
-            {
-                if(cities[i].population>3000)
-                {
-                    bigCities.push(Cities[i]);
-                }
-            }
-            console.log(bigCities);
-             //or this one
+            // var bigCities=[];
+            // //we can write this fn or
+            // for(var i=0;i<cities.length;i++)
+            // {
+            //     if(cities[i].population>3000)
+            //     {
+            //         bigCities.push(Cities[i]);
+            //     }
+            // }
+            // console.log(bigCities);
+            //  //or this one
             var bigCities=cities.filter((city)=>population>300000);
             
-            console.log(bigCities);
+            // console.log(bigCities);
 
             //print city in descending order
-            var bigCities=cities.filter((city)=>population>300000)
-            .sort(function(n1,n2){return n2.name-n1.name;
-            });
+            // var bigCities=cities.filter((city)=>population>300000)
+            // .sort(function(n1,n2){return n2.name-n1.name;
+            // });
             
-            console.log(bigCities);
+            document.write(bigCities);
     </script>
 </body>
 </html>
