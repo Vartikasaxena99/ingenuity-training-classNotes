@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Functiont</title>
+</head>
+<body>
+    <button id="button" onclick="OpenWindow()">Open New Window</button>
+    <script>
+        function OpenWindow()
+        {
+            var url="../day12 /index.html";
+            var windowSize="height=500,width=500";
+           var newWindow= window.open(url," About Page",windowSize);//browser function-which create a dynamical window at run time
+            newWindow.move(500,100);
+        }
+    </script>
+</body>
+</html>

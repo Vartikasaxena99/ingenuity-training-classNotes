@@ -9,8 +9,19 @@
 // console.log(Name1);
 
 
-
-
+window.onload=function()
+{
+  setInterval(()=>
+  {
+    stopLoader();
+  },3000);
+  
+};
+function stopLoader()
+{
+  document.querySelector(".container").getElementsByClassName.display="none";
+  document.querySelector(".todo-container").getElementsByClassName.display="block";
+}
 
 // Selectors
 var todoInput = document.querySelector(".todo-input");
