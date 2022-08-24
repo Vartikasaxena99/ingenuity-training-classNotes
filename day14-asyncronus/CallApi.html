@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyncronus</title>
+</head>
+<body>
+    <!-- java is a syncronus and asyncronus programming language java is a syncronus programming language but if we need,we can make it asyncronus -->
+<!-- 
+API CALL   METHODS
+XHR
+fetch()
+Third Party Package(Axios) -->
+
+
+
+<!-- 1..XHR
+<h1>API CALL</h1>
+<table id="myTable">
+    <tr>
+        <th>SNO.</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>PHONE</th>
+    </tr>
+</table>
+<SCript>
+const  API_URL="";
+function getApiData(url)
+{
+    console.log("api call using XHR");
+    // create an instance of XHR
+    return new Promise((resolve,reject)=>
+    {
+        var request=new XMLHttpRequest();
+        request.open("GET",url);
+        request.send();
+        request.onload=()=>
+
+        {
+            console.log(request);
+            if(request.status===200)
+            {
+                resolve(request.response);
+            }
+            else
+            {
+                reject("not able to fetch data");
+            }
+        };
+    });
+}
+getApiData(API_URL)
+.then(val=>
+{
+    dsplayData(JSON.parse(val));
+}
+)
+.catch((err)=> console.lg("Error"+err));
+function displayData(serverData)
+{
+    for(var user of serverData)
+    {
+        let newtr=document.createElement("tr");
+        let newtd1=document.createElement("td");
+        let newtd2=document.createElement("td");
+        let newtd3=document.createElement("td");
+        let newtd4=document.createElement("td");
+        newtd1.innerText=""+user.id;
+        newtd1.innerText=""+user.name;
+        newtd1.innerText=""+user.email;
+        newtd1.innerText=""+user.phone;
+        newtr.appendChild(newtd1);
+        newtr.appendChild(newtd2);
+        newtr.appendChild(newtd3);
+        newtr.appendChild(newtd4);
+        document.getElementById("myTable").appendChild(newtr);
+    }
+}
+</SCript> -->
+
+
+<script>
+// 2.fetch
+const  API_URL="";
+function getApiData(url)
+{
+    console.log("api call using XHR");
+    var r=fetch(url);
+    console.log(r);
+}
+function getApiData(API_URL)
+{
+fetch(url)
+.then(val=>
+{
+    return val.json();
+}
+)
+.then((res)=>displayData(res))
+.catch((err)=> console.lg("Error"+err));
+}
+
+// spinners if data is loding in bootstrap
+
+// 3..
+/*if we don't want to use then catch then we use "async await"
+const  API_URL="";
+function getApiData(url)
+{
+    console.log("api call using XHR");
+    var r=fetch(url);
+    console.log(r);
+}
+async function getApiData(API_URL)
+{
+var data=await fetch(url);
+var res=await data.json();
+displayData(res);
+}
+*/
+</script>
+</body>
+</html>
