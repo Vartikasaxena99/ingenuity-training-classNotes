@@ -37,9 +37,10 @@ function preload() {
   );
 
   // Add Sounds
+
   coinSound = loadSound("sounds/coinSound.mp3");
   jumpSound = loadSound("sounds/jump.mp3");
-
+  bgSound=loadSound("s")
   mushObstacleImage = loadAnimation(
     "images/mush1.png",
     "images/mush2.png",
@@ -172,9 +173,11 @@ function draw() {
   }
 
   // Score Card
-  textSize(20);
-  fill("brown");
-  text("Coins Collected: " + coinScore, 500, 50);
+  textSize(40);
+  
+  fill("green");
+  // Style("ittalic")
+  text("Your Score: " + coinScore, 500, 50);
 }
 
 function generateBricks() {
